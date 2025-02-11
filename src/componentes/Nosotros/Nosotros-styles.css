@@ -1,0 +1,38 @@
+@import "../../vars.css";
+.section{
+    background-color: var(--gris-principal);
+    display: flex;
+    padding: 30px;
+}
+
+.imgSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.nosotrosSec{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotrosSec h2{
+    color: var(--naranja-secundario);
+    font-family:"Alumni Sans", serif;
+    font-size: 40px;
+}
+
+.nosotrosSec p{
+    color: white;
+    font-family: 'Arvo', serif; 
+    text-align: justify;
+    padding: 10px;
+}

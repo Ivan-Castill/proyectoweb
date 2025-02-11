@@ -1,0 +1,277 @@
+@import "../../vars.css";
+.PgQuienesSomos{
+    margin-top: -10px;
+}
+.FondoWho {
+    font-family: 'Alumni Sans', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    color: white;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    background-color: var(--gris-principal); /* Fondo inicial negro para evitar blanco antes de cargar la imagen */
+    position: relative; /* Importante para la capa superpuesta */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Capa superpuesta para ajustar la opacidad del fondo */
+.FondoWho::before {
+    content: ''; /* Elemento vacío para la capa */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212); /* Color negro semitransparente */
+    z-index: 1; /* Debe estar detrás del contenido del texto */
+}
+
+/* Estilo del contenido */
+.FondoWho > * {
+    position: relative;
+    z-index: 2; /* Coloca el contenido encima de la capa superpuesta */
+}
+
+
+.Titulo{
+    margin: 20px;
+    font-size: 80px;
+    color: var(--naranja-secundario);
+    font-weight: bold;
+    margin-left: 250px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.typing-text {
+    position: absolute;
+    margin-left: 1000px;
+    margin-right: 5%;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px; /* Asegúrate de que solo haya una definición */
+    line-height: 1.6;
+    color: #ffffff;
+    border-right: 2px solid #333;
+    white-space: pre-wrap; /* Asegura que el texto respete saltos de línea */
+    display: inline-block; /* Hace que el fondo se ajuste al texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+.Inicios{
+    font-family: Arial, sans-serif;
+    height: 700px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.212)), url('/public/img/sello33.png');
+}
+
+.Inicios h1{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 70px; /* Puedes ajustar este tamaño si lo necesitas */
+    text-align: center;
+    color: var(--naranja-secundario); /* Cambia el color si lo deseas */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Si el texto es largo, lo recorta */
+    text-overflow: ellipsis; /* Muestra "..." si el texto es muy largo */
+    margin: 40px;
+    -webkit-text-stroke: 1px var(--gris-principal);
+}
+.alineacion{
+    display: flex;
+    margin-left: 285px;
+}
+.flip-card {
+    position: relative;
+    width: 300px; /* Ajusta el tamaño de la tarjeta */
+    height: 400px;
+    perspective: 1000px; /* Habilita el efecto 3D */
+    margin: 20px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra */
+    border-radius: 10px; /* Opcional: esquinas redondeadas */
+    transition: box-shadow 0.3s ease-in-out; /* Suaviza el efecto al hacer hover */
+    overflow: hidden;
+}
+/* Efecto de sombra más intensa al pasar el mouse */
+.flip-card:hover {
+    box-shadow: 0 8px 16px rgb(255, 255, 255); /* Sombra más grande */
+}
+
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del texto de fondo */
+}
+
+.flip-card-front h2{
+    position: relative;
+    color: var(--naranja-secundario);
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    /*-webkit-text-stroke: 1px black; /* Borde alrededor del texto */
+}
+.fondorecuadro{
+    position: absolute;
+     top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%) rotate(-45deg); /* Lo rota y centra */
+    font-size: 120px; /* Tamaño grande del texto */
+    color: var(--gris-principal);
+    opacity: 70%;
+    font-weight: bold; /* Negrita para mayor visibilidad */
+    z-index: 0; /* Asegura que quede detrás del contenido */
+    pointer-events: none; /* El texto no interferirá con la interacción */
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Voltea la tarjeta */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta el lado trasero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Lado frontal (imagen) */
+.flip-card-front {
+    background-color: rgb(87, 87, 87);
+}
+
+/* Lado trasero (información) */
+.flip-card-back {
+    background: linear-gradient(to right, rgb(0 0 0 /0.212),rgb(0 0 0 /0.212)), url('/public/img/Barrido2.jpg');
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+/*parte fundadores*/
+
+.Fundadores{
+    background: linear-gradient(to right, rgb(0 0 0 /0.212),rgb(0 0 0 /0.212)), url('/public/img/EtMarcas2.jpg');
+    align-items: center;
+    height: 600px;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.Fundadores h1{
+    margin-top: 200px;
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+}
+.infFundadores {
+    display: flex;
+    margin: 80px;
+    justify-content: center;
+}
+.FundadoresLeft, .FundadoresRight {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+.FundadorPresentacion{
+    background-color: rgba(255, 255, 255, 0.288);
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+.NombreFundador{
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.DescripcionFundador{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.fotoFundador{
+    width:100px;
+    height: 100px;
+    border-radius: 60px;
+    margin: 10px;
+}
+
+.ProyectosRecientes {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.212)), url('/public/img/EtMarcas.jpg');
+}
+.ProyectosRecientes h1{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.proyecto-card {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: var(--naranja-secundario);
+}
+
+.proyecto-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.proyecto-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.proyecto-card p {
+    text-align: justify;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+

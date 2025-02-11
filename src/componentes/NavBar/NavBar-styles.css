@@ -1,0 +1,26 @@
+@import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap');
+.nav-bar{
+    background-color: var(--gris-principal);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 170px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.items a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--naranja-secundario);
+    font-family: "Alumni Sans", serif;
+    font-size: 25px;
+}

@@ -1,0 +1,78 @@
+@import '../../vars.css';
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap');
+
+
+footer{
+    background-color: #181717;
+    padding: 20px;
+}
+
+.footer-principal{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.pie{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pie li{
+    display: inline;
+    margin-left: 20px;
+}
+
+.pie a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Alumni Sans SC', sans-serif;
+}
+
+.pie li{
+    color: #F58634;
+}
+
+/* Estilo del mensaje de "Contactanos" */
+.contactanos-footer{
+    font-family: 'Alumni Sans SC', sans-serif;
+    font-size: 20px;
+    color: #F58634;
+    margin-bottom: 10px;
+     ;
+}
+
+/* Estilos de redes sociales */
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+.social-links a{
+    margin: 0 15px;
+    font-size: 30px;
+    color: white;
+    
+}
+.social-links img{
+    width: 25px;
+
+}
+
+.social-links a:hover{
+    color: #F58634;
+}
+
+/* Copyright */
+.copyright{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Arvo', serif;
+}

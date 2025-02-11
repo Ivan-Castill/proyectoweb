@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap');
+@import "../../vars.css";
+.etiSec{
+    background-color: var(--gris-principal);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.card{
+    margin: 15px;
+    background-color: #181717;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.tafeta{
+    background:linear-gradient(to right, rgb(0 0 0 / .5),rgba(0, 0, 0, 0.178)), url('./img/tafeta.png');
+    width: 80%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.damasco{
+    background:linear-gradient(to right, rgb(0 0 0 / .5),rgba(0, 0, 0, 0.178)), url('./img/damasco.png');
+    width: 80%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.satin{
+    background:linear-gradient(to right, rgb(0 0 0 / .5),rgba(0, 0, 0, 0.178)), url('./img/satin.png');
+    width: 80%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card p{
+    margin: 20px;
+    text-align: justify;
+    font-family: 'Arvo', serif; 
+}
+
+.etiSec button{
+    margin: 40px;
+    width: 200px;
+    background-color: var(--naranja-secundario);
+    border-style: none;
+    border: solid, 2px, var(--naranja-secundario);
+    border-radius: 10px;
+    height: 50px;
+}
+
+.etiSec button a{
+    text-decoration: none;
+    color: white;
+    font-family: "Alumni Sans", serif;
+    font-size: 30px;
+}

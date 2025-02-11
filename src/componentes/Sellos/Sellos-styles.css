@@ -1,0 +1,124 @@
+:root {
+    --gris: #373435;
+    --negro: #181717;
+    --naranja: #F58634;
+}
+
+.title_txt {
+    background: var(--gris);
+    color: var(--naranja);
+    text-align: center;
+    font-family: 'Alumni Sans SC', sans-serif;
+    padding: 35px 0;
+}
+
+.container {
+    background: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+
+.container_hijo {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
+    width: 26%;
+    height: auto;
+    text-align: center;
+    margin: 10px 45px;
+    border-radius: 10px;
+    color: var(--naranja);
+    font-family: 'Arvo', sans-serif;
+}
+
+.container_hijo img {
+    margin: 35px 0;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tittle_img {
+    margin-bottom: 25px;
+}
+
+/* Estilo modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal_content {
+    margin: 13% 39%;
+    max-width: 700px;
+    cursor: pointer;
+}
+
+.modal_nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botón fullscreen */
+.fullscreen {
+    position: absolute;
+    top: 3px;
+    right: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fullscreen:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fullscreen:focus {
+    outline: none;
+}
